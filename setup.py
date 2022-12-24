@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup_py_dir = os.path.dirname(os.path.realpath(__file__))
 need_files = []
-datadir = "ycb_manipulation"
+datadir = "ycb-manipulation"
 
 hh = setup_py_dir + "/" + datadir
 
@@ -17,7 +17,7 @@ for root, dirs, files in os.walk(hh):
 
 
 setup(
-  name="ycb_manipulation",
+  name="ycb-manipulation",
   version="0.1",
   author="Sanghyeon Son",
   description="Selected YCB objects for manipulation tasks.",
@@ -26,6 +26,6 @@ setup(
   keywords="urdf model object simulation pybullet",
   packages=find_packages(),
   package_dir={'': '.'},
-  package_data={'ycb_manipulation': need_files},
-  url="https://github.com/ssh98son/ycb_manipulation",
+  package_data={'ycb-manipulation': need_files},
+  url="https://github.com/ssh98son/ycb-manipulation",
 )
